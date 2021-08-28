@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css-min/normalize.min.css">
+    <link rel="stylesheet" href="./css-min/style.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="game">
+            <div class="gameStart">
+                <h2 class="gameText">2/3/4... på rad</h2>
+                <button class="startGameBtn">Start</button>
+            </div>
+            <div class="gameGrid">
+                <div class="gridCell" row="0" column="0" id="r0c0" onclick='clickCell(u(this).attr("id"))'></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js-min/umbrella.min.js"></script>
+    <script src="./js-min/script.min.js"></script>
+</body>
+
+</html>
