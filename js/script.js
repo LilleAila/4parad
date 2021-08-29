@@ -30,12 +30,12 @@ windowResize();
 window.addEventListener("resize", windowResize);
 
 u(".startGameBtn").on("click", () => {
-    var gridSize = 10;
-    // var gridCells = gridSize * gridSize;
+    const gridSize = 10;
+    // const gridCells = gridSize * gridSize;
     try {
         u(".gridCell").remove();
-        for (var r = 0; r < gridSize; r++) {
-            for (var c = 0; c < gridSize; c++) {
+        for (let r = 0; r < gridSize; r++) {
+            for (let c = 0; c < gridSize; c++) {
                 try {
                     u(".gameGrid").append(u("<div>").addClass("gridCell").attr("row", r).attr("column", c).attr("id", `r${r}c${c}`).attr("onclick", "clickCell(u(this).attr(\"id\"))"));
                 }
