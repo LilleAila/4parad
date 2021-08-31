@@ -1,7 +1,20 @@
-u(".debug").on("click", () => {
-    u(".vHeight").text(`Viewport Height: ${u("body").size().height}`);
-    u(".wHeight").text(`Window Height: ${window.innerHeight}`)
-});
+// u(".debug").on("click", () => {
+//     u(".vHeight").text(`Viewport Height: ${u("body").size().height}`);
+//     u(".wHeight").text(`Window Height: ${window.innerHeight}`);
+//     console.log(JSON.stringify("w100vh,h100vh,w100em,h100px,w100px,h100vw".match(/w\d+\w+/gi)));
+// });
+
+// const resize = () => {
+//     u("[size]").each((node, i) => {
+//         let css = ``;
+//         css = `width: ${window.innerWidth / 100 * parseInt(u(node).attr("w").match(/\d+/)[0])};
+//         height: ${window.innerHeight / 100 * parseInt(u(node).attr("h").match(/\d+/)[0])};`;
+//         u(node).attr("style", css);
+//     });
+// }
+
+window.onload = resize;
+window.onresize = resize;
 
 const r = document.querySelector(":root");
 

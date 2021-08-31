@@ -1,11 +1,11 @@
-:root {
+/* :root {
   --wHeight: 1vh;
   --wWidth: 1vw;
   --wMin: 1vmin;
   --wMax: 1vmax;
-}
+} */
 
-.debug {
+/* .debug {
   height: 30vmin;
   width: 50vmin;
   position: fixed;
@@ -19,7 +19,7 @@
   text-align: center;
   align-items: center;
   justify-content: space-around;
-}
+} */
 
 h1 {
   font-size: 3.5vmin;
