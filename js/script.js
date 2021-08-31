@@ -13,8 +13,8 @@
 //     });
 // }
 
-window.onload = resize;
-window.onresize = resize;
+// window.onload = resize;
+// window.onresize = resize;
 
 const r = document.querySelector(":root");
 
